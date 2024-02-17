@@ -57,13 +57,13 @@ export const VolunteerDetails = () => {
             </p>
             <div className="my-2">
               <Link to={`/volunteer/edit/${id}`} state={volunteer}>
-                <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mr-3">
+                <button className="mr-4 text-blue-600">
                   Edit
                 </button>
               </Link>
               <button
                 onClick={() => handleDelete(id)}
-                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                className="text-red-600"
               >
                 Delete
               </button>

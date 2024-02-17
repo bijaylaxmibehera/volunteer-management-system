@@ -85,7 +85,7 @@ export const VolunteerForm = () => {
               onChange={(e) =>
                 setVolunteerData({
                   ...volunteerData,
-                  skills: e.target.value.replace(/ /g, "").split(","),
+                  skills: e.target.value.split(","),
                 })
               }
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -103,7 +103,7 @@ export const VolunteerForm = () => {
               onChange={(e) =>
                 setVolunteerData({
                   ...volunteerData,
-                  areasOfInterest: e.target.value.replace(/ /g, "").split(","),
+                  areasOfInterest: e.target.value.split(","),
                 })
               }
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -121,7 +121,7 @@ export const VolunteerForm = () => {
               onChange={(e) =>
                 setVolunteerData({
                   ...volunteerData,
-                  assignedEvents: e.target.value.replace(/ /g, "").split(","),
+                  assignedEvents: e.target.value.split(","),
                 })
               }
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -139,7 +139,7 @@ export const VolunteerForm = () => {
               onChange={(e) =>
                 setVolunteerData({
                   ...volunteerData,
-                  volunteerHistory: e.target.value.replace(/ /g, "").split(","),
+                  volunteerHistory: e.target.value.split(","),
                 })
               }
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

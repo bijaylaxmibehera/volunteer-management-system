@@ -27,21 +27,21 @@ export const EventList=({events})=>{
               <td>
                 {event.roles.map((role, index) => (
                   <div key={index}>
-                    <p>{role.role}</p>
+                    <p><Link to={`/events/${event._id}`}>{role.role}</Link></p>
                   </div>
                 ))}
               </td>
               <td>
                 {event.roles.map((role, index) => (
                   <div key={index}>
-                    <p>{role.volunteersRequired}</p>
+                    <p><Link to={`/events/${event._id}`}>{role.volunteersRequired}</Link></p>
                   </div>
                 ))}
               </td>
               <td>
                 {event.volunteers.map((volunteer, index) => (
                   <div key={index}>
-                    <p>{volunteer.name} - {volunteer.role}</p>
+                    <p><Link to={`/events/${event._id}`}>{volunteer.name} - {volunteer.role}</Link></p>
                   </div>
                 ))}
               </td>
