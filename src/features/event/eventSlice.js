@@ -29,7 +29,7 @@ export const addEventAsync = createAsyncThunk(
 
 export const updateEventsAsync = createAsyncThunk(
   'events/updateEventsAsync',
-  async (id, updatedEvent) => {
+  async ({id, updatedEvent}) => {
     const response = await axios.put(
       `https://00f2f813-ae16-475f-a9c4-96e475463e67-00-23sy3odetpv0i.pike.replit.dev/api/v1/events/${id}`,
       updatedEvent

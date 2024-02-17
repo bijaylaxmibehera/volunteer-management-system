@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export const VolunteerList = ({ volunteers }) => {
   return (
     <>
-      <table className="table-auto border-collapse border border-gray-400 my-6 mx-auto">
-        <thead>
-          <tr className="*:border *:border-gray-400 *:px-4 *:py-2">
+      <table className="min-w-full divide-y divide-gray-200 my-5">
+        <thead className="bg-gray-50">
+          <tr className="*:px-6 *:py-3 *:text-left *:text-xs *:font-medium *:text-gray-500 *:uppercase ">
             <th>Name</th>
             <th>Contact</th>
             <th>Skills</th>
@@ -30,7 +30,7 @@ export const VolunteerList = ({ volunteers }) => {
             } = volunteer;
             return (
               <>
-                <tr key={_id} className="*:border *:border-gray-400 *:px-4 *:py-2 *:text-indigo-700">
+                <tr key={_id} className="*:px-6 *:py-4">
                   <td>
                     <Link to={`/volunteer/${_id}`}>{name}</Link>
                   </td>

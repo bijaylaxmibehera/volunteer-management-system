@@ -16,7 +16,6 @@ export const NavBar=()=>{
           <nav className="flex justify-around w-[70%] text-lg">
             <NavLink to="/" style={getStyle}>Volunteers</NavLink>
             <NavLink to="/events" style={getStyle}>Events</NavLink>
-            <NavLink to="/event-summary" style={getStyle}>Event Summary</NavLink>
           </nav>
         </div>
     )
