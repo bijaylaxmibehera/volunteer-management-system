@@ -16,6 +16,8 @@ export const NavBar=()=>{
           <nav className="flex justify-around w-[70%] text-lg">
             <NavLink to="/" style={getStyle}>Volunteers</NavLink>
             <NavLink to="/events" style={getStyle}>Events</NavLink>
+            <NavLink to="https://github.com/bijaylaxmibehera/volunteer-management-system" style={getStyle} target="_blank">Git repo</NavLink>
+            <NavLink to="https://replit.com/@Bijaylaxmi2117/volunteer-management-api?v=1" style={getStyle} target="_blank">API</NavLink>
           </nav>
         </div>
     )
